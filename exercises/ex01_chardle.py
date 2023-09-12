@@ -37,5 +37,9 @@ if character == word[4]:
 
 if count == 0:
     print("No instances of " + character + " found in " + word)
-else: 
+    exit()
+
+if count == 1:
     print(str(count) + " instance of " + character + " found in " + word)
+else:
+    print(str(count) + " instances of " + character + " found in " + word)
