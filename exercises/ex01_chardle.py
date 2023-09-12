@@ -35,4 +35,4 @@ if character == word[4]:
     print(character+" found at index 4")
     count+=1
 
-print(count+" instance of "+character+" found in "+word)
+print(str(count)+" instance of "+character+" found in "+word)
