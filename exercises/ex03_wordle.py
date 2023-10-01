@@ -50,7 +50,7 @@ def input_guess(length: int) -> str:
 
 
 def main() -> None:
-    """The main function."""
+    """The entrypoint of the program and main game loop."""
     Try_times: int = 1
     enter_word: str = ""
 
