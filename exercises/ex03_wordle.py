@@ -1,6 +1,7 @@
 """EX03 - Structured Wordle."""
 __author__ = "730679279"
 
+
 def contains_char(wordToCheck: str, letter: str) -> bool:
     assert len(letter) == 1
     index_tracker: int = 0
@@ -12,6 +13,7 @@ def contains_char(wordToCheck: str, letter: str) -> bool:
             index_tracker = index_tracker + 1
     return False
 """Fucntion that check whether the letter is included in the word."""
+
 
 def emojified(guess: str, secret_word: str) -> str:
     assert len(guess) == len(secret_word)
@@ -35,6 +37,7 @@ def emojified(guess: str, secret_word: str) -> str:
 
     return result
 
+
 def input_guess(length: int) -> str:
     received_word: str = input("Enter a "+str(length)+" character word:")
 
@@ -42,6 +45,7 @@ def input_guess(length: int) -> str:
         received_word = input("That wasn't "+str(length)+" chars! Try again:")
 
     return received_word
+
 
 def main() -> None:
     Try_times: int = 1
@@ -58,6 +62,7 @@ def main() -> None:
             Try_times = Try_times + 1
     
     print("X/6 - Sorry, try again tomorrow!")
+
 
 if __name__ == "__main__":
     main()
