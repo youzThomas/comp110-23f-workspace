@@ -1,9 +1,9 @@
 """EX03 - Structured Wordle."""
 __author__ = "730679279"
 
-
 """Fucntion that check whether the letter is included in the word."""
 def contains_char(wordToCheck: str, letter: str) -> bool:
+
     assert len(letter) == 1
     index_tracker: int = 0
 
@@ -17,6 +17,7 @@ def contains_char(wordToCheck: str, letter: str) -> bool:
 
 """Function that converts the result of comparison between secret word and the guessed word into designated emoji expression."""
 def emojified(guess: str, secret_word: str) -> str:
+
     assert len(guess) == len(secret_word)
 
     WHITE_BOX: str = "\U00002B1C"
@@ -41,6 +42,7 @@ def emojified(guess: str, secret_word: str) -> str:
 
 """Function that accept the guessed word as input from user."""
 def input_guess(length: int) -> str:
+
     received_word: str = input("Enter a " + str(length) + " character word:")
 
     while len(received_word) != length:
@@ -51,6 +53,7 @@ def input_guess(length: int) -> str:
 
 """The main function."""
 def main() -> None:
+
     Try_times: int = 1
     enter_word: str = ""
 
