@@ -22,7 +22,6 @@ def emojified(guess: str, secret_word: str) -> str:
     
     index_mark: int = 0
     result: str = ""
-
     while index_mark < len(secret_word):
         if guess[index_mark] == secret_word[index_mark]:
             result = result + GREEN_BOX
@@ -62,11 +61,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
- 
- 
-
