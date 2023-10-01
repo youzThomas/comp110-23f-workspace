@@ -32,6 +32,8 @@ def emojified(guess: str, secret_word: str) -> str:
             else:
                 result = result + WHITE_BOX
     
+        index_mark = index_mark + 1
+
     return result
 
 def input_guess(length: int) -> str:
@@ -51,11 +53,12 @@ def main() -> None:
         enter_word = input_guess(len("codes"))
         print(emojified(enter_word, "codes"))
         if enter_word == "codes":
-            return "You won in "+str(Try_times)+"/6 turns!"
+            print("You won in "+str(Try_times)+"/6 turns!")
+            return
         else:
             Try_times = Try_times + 1
     
-    return "X/6 - Sorry, try again tomorrow!"
+    print("X/6 - Sorry, try again tomorrow!")
 
 if __name__ == "__main__":
     main()
