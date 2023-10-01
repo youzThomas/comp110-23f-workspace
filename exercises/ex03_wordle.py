@@ -28,7 +28,7 @@ def emojified(guess: str, secret_word: str) -> str:
         if guess[index_mark] == secret_word[index_mark]:
             result = result + GREEN_BOX
         else:
-            if contains_char(secret_word, guess[index_mark]) == True:
+            if contains_char(secret_word, guess[index_mark]) is True:
                 result = result + YELLOW_BOX
             else:
                 result = result + WHITE_BOX
@@ -36,15 +36,17 @@ def emojified(guess: str, secret_word: str) -> str:
         index_mark = index_mark + 1
 
     return result
+"""Function that converts the result of comparison between secret word and the guessed word into designated emoji expression."""
 
 
 def input_guess(length: int) -> str:
-    received_word: str = input("Enter a "+str(length)+" character word:")
+    received_word: str = input("Enter a " + str(length) + " character word:")
 
     while len(received_word) != length:
-        received_word = input("That wasn't "+str(length)+" chars! Try again:")
+        received_word = input("That wasn't " + str(length) + " chars! Try again:")
 
     return received_word
+"""Function that accept the guessed word as input from user."""
 
 
 def main() -> None:
@@ -52,16 +54,17 @@ def main() -> None:
     enter_word: str = ""
 
     while Try_times < 6:
-        print("=== Turn "+str(Try_times)+"/6 ===")
+        print("=== Turn " + str(Try_times) + "/6 ===")
         enter_word = input_guess(len("codes"))
         print(emojified(enter_word, "codes"))
         if enter_word == "codes":
-            print("You won in "+str(Try_times)+"/6 turns!")
+            print("You won in " + str(Try_times) + "/6 turns!")
             return
         else:
             Try_times = Try_times + 1
     
     print("X/6 - Sorry, try again tomorrow!")
+"""The main function."""
 
 
 if __name__ == "__main__":
