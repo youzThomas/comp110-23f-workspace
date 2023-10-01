@@ -2,6 +2,7 @@
 __author__ = "730679279"
 
 
+"""Fucntion that check whether the letter is included in the word."""
 def contains_char(wordToCheck: str, letter: str) -> bool:
     assert len(letter) == 1
     index_tracker: int = 0
@@ -12,9 +13,9 @@ def contains_char(wordToCheck: str, letter: str) -> bool:
         else:
             index_tracker = index_tracker + 1
     return False
-"""Fucntion that check whether the letter is included in the word."""
 
 
+"""Function that converts the result of comparison between secret word and the guessed word into designated emoji expression."""
 def emojified(guess: str, secret_word: str) -> str:
     assert len(guess) == len(secret_word)
 
@@ -36,9 +37,9 @@ def emojified(guess: str, secret_word: str) -> str:
         index_mark = index_mark + 1
 
     return result
-"""Function that converts the result of comparison between secret word and the guessed word into designated emoji expression."""
 
 
+"""Function that accept the guessed word as input from user."""
 def input_guess(length: int) -> str:
     received_word: str = input("Enter a " + str(length) + " character word:")
 
@@ -46,9 +47,9 @@ def input_guess(length: int) -> str:
         received_word = input("That wasn't " + str(length) + " chars! Try again:")
 
     return received_word
-"""Function that accept the guessed word as input from user."""
 
 
+"""The main function."""
 def main() -> None:
     Try_times: int = 1
     enter_word: str = ""
@@ -64,7 +65,6 @@ def main() -> None:
             Try_times = Try_times + 1
     
     print("X/6 - Sorry, try again tomorrow!")
-"""The main function."""
 
 
 if __name__ == "__main__":
