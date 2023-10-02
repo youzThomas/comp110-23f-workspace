@@ -54,7 +54,7 @@ def main() -> None:
     Try_times: int = 1
     enter_word: str = ""
 
-    while Try_times < 6:
+    while Try_times < 7:
         print("=== Turn " + str(Try_times) + "/6 ===")
         enter_word = input_guess(len("codes"))
         print(emojified(enter_word, "codes"))
