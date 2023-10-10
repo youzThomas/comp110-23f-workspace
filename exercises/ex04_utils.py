@@ -1,8 +1,12 @@
 """EX04 - 'list' Utility Functions."""
 __author__ = "730679279"
 
+
 def all(integer_list: list[int], integer: int) -> bool:
     """check if the value within the list is the same as the integer."""
+    if len(integer_list) == 0:
+        return False
+    
     tracker: int = 0
 
     while tracker < len(integer_list):
@@ -12,6 +16,7 @@ def all(integer_list: list[int], integer: int) -> bool:
             tracker = tracker + 1
 
     return True
+
 
 def max(input: list[int]) -> int:
     """find the largest number in a list."""
@@ -27,6 +32,7 @@ def max(input: list[int]) -> int:
         position_index = position_index +1
 
     return max_value
+
 
 def is_equal(group_one: list[int], group_two: list[int]) -> bool:
     """check whether two lists are exactly equal to each others."""
