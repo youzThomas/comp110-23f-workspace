@@ -3,7 +3,7 @@ __author__ = "730679279"
 
 
 def all(integer_list: list[int], integer: int) -> bool:
-    """check if the value within the list is the same as the integer."""
+    """Check if the value within the list is the same as the integer."""
     if len(integer_list) == 0:
         return False
     
@@ -19,7 +19,7 @@ def all(integer_list: list[int], integer: int) -> bool:
 
 
 def max(input: list[int]) -> int:
-    """find the largest number in a list."""
+    """Find the largest number in a list."""
     if len(input) == 0:
         raise ValueError("max() arg is an empty List")
     
@@ -29,13 +29,13 @@ def max(input: list[int]) -> int:
     while position_index < len(input):
         if max_value < input[position_index]:
             max_value = input[position_index]
-        position_index = position_index +1
+        position_index = position_index + 1
 
     return max_value
 
 
 def is_equal(group_one: list[int], group_two: list[int]) -> bool:
-    """check whether two lists are exactly equal to each others."""
+    """Check whether two lists are exactly equal to each others."""
     if len(group_one) != len(group_two):
         return False
     else:
