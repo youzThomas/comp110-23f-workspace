@@ -1,9 +1,12 @@
-"""EX05_Turtle_Project: In this program, I'm using the Turtle utility to draw a small house at the center of the canva,
-a sun at the top-right, forest made up of tree besides the house, and several clouds floating on the sky."""
+"""EX05_Turtle_Project: In this program, I'm using the Turtle utility to draw the scene of a tranquil hut at the midst of a forest.
+A small house will be drawn at the center of the canva; a sun will be drawn at the top-right;
+a forest made up of tree will be drawn besides the house, and several clouds will be drawn above the trees.
+"""
 
 __author__ = "730679279"
 
 from turtle import Turtle, colormode, done
+
 
 def draw_house(a_turtle: Turtle, start_x: float, start_y: float) -> None:
     """Draw a house."""
@@ -63,6 +66,7 @@ def draw_house(a_turtle: Turtle, start_x: float, start_y: float) -> None:
 
     a_turtle.end_fill()
 
+
 def draw_tree(paint: Turtle, x: float, y: float) -> None:
     """Draw four trees in a line."""
     i: int = 0
@@ -111,6 +115,7 @@ def draw_tree(paint: Turtle, x: float, y: float) -> None:
         x = x + 150
         i = i + 1
 
+
 def draw_sun(painter: Turtle, x: float, y: float, radius: float) -> None:
     """Draw a sun at the top-right of the canva."""
     painter.penup()
@@ -121,6 +126,7 @@ def draw_sun(painter: Turtle, x: float, y: float, radius: float) -> None:
     painter.begin_fill()
     painter.circle(radius)
     painter.end_fill()
+
 
 def draw_cloud(t: Turtle, x: float, y: float) -> None:
     """Draw a cloud."""
@@ -148,9 +154,6 @@ def draw_cloud(t: Turtle, x: float, y: float) -> None:
     t.end_fill()
 
 
-
-        
-
 def main() -> None:
     """The entrypoint of my scene."""
     display: Turtle = Turtle()
@@ -168,13 +171,6 @@ def main() -> None:
     
     done()
 
+
 if __name__ == "__main__":
     main()
- 
-
-
-
-
-
-
-
