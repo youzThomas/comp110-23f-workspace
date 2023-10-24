@@ -1,5 +1,5 @@
 """EX05 - Turtle Project."""
-from turtle import Turtle, colormode, done
+
 """
 In this program, I'm using the Turtle utility to draw the scene of a tranquil hut at the midst of a forest.
 A small house will be drawn at the center of the canva; a sun will be drawn at the top-right;
@@ -7,7 +7,7 @@ a forest made up of tree will be drawn besides the house, and several clouds wil
 """
 
 __author__ = "730679279"
-
+from turtle import Turtle, colormode, done
 
 def draw_house(a_turtle: Turtle, start_x: float, start_y: float) -> None:
     """Draw a house."""
