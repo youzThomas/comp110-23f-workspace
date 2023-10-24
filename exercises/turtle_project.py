@@ -1,5 +1,4 @@
-"""EX05 - Turtle Project."""
-
+"""EX05 - Turtle Project: A tranquil hut at the midst of a forest with clouds floating and sun shining."""
 __author__ = "730679279"
 
 from turtle import Turtle, colormode, done
