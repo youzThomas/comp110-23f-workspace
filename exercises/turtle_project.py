@@ -1,3 +1,4 @@
+from turtle import Turtle, colormode, done
 """EX05 - Turtle Project."""
 
 """
@@ -7,7 +8,6 @@ a forest made up of tree will be drawn besides the house, and several clouds wil
 """
 
 __author__ = "730679279"
-from turtle import Turtle, colormode, done
 
 
 def draw_house(a_turtle: Turtle, start_x: float, start_y: float) -> None:
