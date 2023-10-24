@@ -7,7 +7,6 @@ a forest made up of tree will be drawn besides the house, and several clouds wil
 """
 
 __author__ = "730679279"
-
 from turtle import Turtle, colormode, done
 
 
