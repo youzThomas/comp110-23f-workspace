@@ -1,11 +1,5 @@
 """EX05 - Turtle Project."""
 
-"""
-In this program, I'm using the Turtle utility to draw the scene of a tranquil hut at the midst of a forest.
-A small house will be drawn at the center of the canva; a sun will be drawn at the top-right;
-a forest made up of tree will be drawn besides the house, and several clouds will be drawn above the trees.
-"""
-
 __author__ = "730679279"
 
 from turtle import Turtle, colormode, done
