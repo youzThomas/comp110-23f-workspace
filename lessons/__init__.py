@@ -1,1 +1,1 @@
-"Docstring."
+"""Docstring."""

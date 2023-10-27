@@ -1,8 +1,7 @@
 """Turtle_tutorial."""
-from turtle import Turtle, colormode, done
+from turtle import Turtle, done
 leo: Turtle = Turtle()
 
-leo.color("red")
 leo.forward(300)
 leo.left(90)
 leo.forward(300)

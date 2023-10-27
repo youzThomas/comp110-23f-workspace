@@ -24,4 +24,3 @@ def test_three() -> None:
     test_list_one: list[str] = ["z", "y"]
     test_list_two: list[int] = [7]
     assert zip(test_list_one, test_list_two) == {}
-
