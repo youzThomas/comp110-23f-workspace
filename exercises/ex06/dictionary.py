@@ -15,21 +15,27 @@ def invert(input_dict: dict[str, str]) -> dict[str, str]:
 
 def favorite_color(dict1: dict[str, str]) -> str:
     """Find out the color appears the most."""
-    track: dict[str, str] = {}
-    for key, value in dict1.items():
-        if value not in track:
-            track[value] = 0
+    track: dict[str, int] = {}
+    for item in dict1:
+        if dict1[item] not in track:
+            track[dict1[item]] = 1
         else:
-            track[value] += 1
-    return max(track, key=track.get)
+            track[dict1[item]] = track[dict1[item]] + 1
+    max_color: str = ""
+    max_count: int = 0
+    for item in track:
+        if track[item] > max_count:
+            max_color = item
+            max_count = track[item]
+    return str(max_color)
 
 
-def count(input_list: list[str]) -> dict[str, str]:
+def count(input_list: list[str]) -> dict[str, int]:
     """Count numbers of appearance of each element in the list."""
-    result: dict[str, str] = {}
+    result: dict[str, int] = {}
     for i in input_list:
         if i in result:
-            result[i] += 1
+            result[i] = result[i] + 1
         else:
             result[i] = 1
     return result
@@ -40,7 +46,7 @@ def alphabetizer(input_list: list[str]) -> dict[str, list[str]]:
     alphabet_dict: dict[str, list[str]] = {}
     for i in input_list:
         if i[0].lower() in alphabet_dict:
-            alphabet_dict.get(i[0].lower()).append(i)
+            alphabet_dict[(i[0].lower())].append(i)
         else:
             alphabet_dict[i[0].lower()] = [i]
     return alphabet_dict    
@@ -49,7 +55,7 @@ def alphabetizer(input_list: list[str]) -> dict[str, list[str]]:
 def update_attendance(attendance_record: dict[str, list[str]], weekdays: str, student: str) -> dict[str, list[str]]:
     """Update the attendance log by inserting the name of the student into the provided weekday."""
     if weekdays in attendance_record:
-        attendance_record.get(weekdays).append(student)
+        attendance_record[(weekdays)].append(student)
     else:
         attendance_record[weekdays] = [student]
     return attendance_record
