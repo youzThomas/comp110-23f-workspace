@@ -20,5 +20,4 @@ class Point:
 
     def scale(self, factor: int) -> Point:
         """Create a new object with the mutated value of attribute x and y of the previous object."""
-        new_object: Point(self.x * factor, self.y * factor)
-        return new_object
+        return Point(self.x * factor, self.y * factor)
