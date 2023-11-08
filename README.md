@@ -34,18 +34,3 @@ Your work in the course will be completed in this workspace. Instructions for th
 4. Press enter with `origin/main` as the first option.
 5. This downloads the latest course materials! It will succeed silently, so if nothing appears to happen it worked (and any new files will be available in the file explorer). If there was an error, you would see an error message pop up.
 
-## Setup Backup Course Material Repository
-
-When you are first setting up your personal workspace repository, you will need to follow these instructions to connect the repository on your computer with your personal "backup" course repository on GitHub. As we add new material through the course, you will then be able to easily back it up to your backup repo.
-
-1. Navigate a web browser to <https://classroom.github.com/a/zgjDwIVk>
-2. Join the Classroom by selecting your ONYEN (Clicking "Skip to the next step" is also OK)
-3. Click "Accept this Assignment"
-4. When the workspace is getting setup you may need to refresh until it tells you you're ready to go!
-5. Click the link to your personal backup repository that looks something like this `https://github.com/comp110-23f/comp110-workspace-23f-krisjordan` (except instead of `krisjordan` you will see your GitHub username).
-6. Toward the top of the page it will say "Quick setup" and you will see two buttons: HTTPS and SSH. Click HTTPS and copy the text of the URL in the box to the right of the buttons (or click the clipboard icon)
-7. With your workspace open in VSCode, type in _Git: Add Remote_ and press enter with the option selected.
-10. In the blank text box that appears, paste in the URL to your backup repository that you just copied. Press enter.
-11. When asked for "Remote name" type in: `backup`
-12. Follow the steps in the section above on how to "Backup your work."
-
