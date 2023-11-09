@@ -1,10 +1,8 @@
 """EX07_Dictionary Unit Tests."""
 
-from exercises.ex06.dictionary import invert
-from exercises.ex06.dictionary import favorite_color
-from exercises.ex06.dictionary import count
-from exercises.ex06.dictionary import alphabetizer
-from exercises.ex06.dictionary import update_attendance
+
+import pytest
+from exercises.ex06.dictionary import invert, favorite_color, count, alphabetizer, update_attendance
 
 __author__: int = 730679279
 
@@ -23,8 +21,9 @@ def test_invert_two() -> None:
 
 def test_invert_three() -> None:
     """Test_invert_three: edge case."""
-    test_dict_three: dict[str, str] = {"a": "b", "c": "b"}
-    assert invert(test_dict_three) == "Same key exist mutiple times!"
+    with pytest.raises(KeyError):
+        test_dict_three: dict[str, str] = {"a": "b", "c": "b"}
+        invert(test_dict_three)
 
 
 def test_favorite_color_one() -> None:
