@@ -55,7 +55,8 @@ def alphabetizer(input_list: list[str]) -> dict[str, list[str]]:
 def update_attendance(attendance_record: dict[str, list[str]], weekdays: str, student: str) -> dict[str, list[str]]:
     """Update the attendance log by inserting the name of the student into the provided weekday."""
     if weekdays in attendance_record:
-        attendance_record[(weekdays)].append(student)
+        if student not in attendance_record[(weekdays)]:
+            attendance_record[(weekdays)].append(student)
     else:
         attendance_record[weekdays] = [student]
     return attendance_record
