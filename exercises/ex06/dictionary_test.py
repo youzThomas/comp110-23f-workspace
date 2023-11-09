@@ -18,7 +18,7 @@ def test_invert_one() -> None:
 def test_invert_two() -> None:
     """Test_invert_two: use case."""
     test_dict_two: dict[str, str] = {"k": "j", "u": "v"}
-    assert invert(test_invert_two) == {"j": "k", "v": "u"}
+    assert invert(test_dict_two) == {"j": "k", "v": "u"}
 
 
 def test_invert_three() -> None:
@@ -32,10 +32,12 @@ def test_favorite_color_one() -> None:
     test_dict_color_one: dict[str, str] = {"T": "blue", "J": "green", "k": "blue"}
     assert favorite_color(test_dict_color_one) == "blue"
 
+
 def test_favorite_color_two() -> None:
     """Test_favorite_color_two: use case."""
     test_dict_color_two: dict[str, str] = {"F": "black", "S": "yellow", "A": "black"}
     assert favorite_color(test_dict_color_two) == "black"
+
 
 def test_favorite_color_three() -> None:
     """Test_favorite_color_three: edge case."""
