@@ -3,8 +3,8 @@ from __future__ import annotations
 class Fish:
     age: int
     
-    def __init__(self):
-        age = 0
+    def __init__(self, age_in: int = 0):
+        self.age = age_in
         return None
     
     def one_day(self):

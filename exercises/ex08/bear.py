@@ -4,9 +4,9 @@ class Bear:
     age: int
     hunger_score: int
     
-    def __init__(self):
-        age = 0
-        hunger_score = 0
+    def __init__(self, age_in: int = 0, hunger_in: int = 0):
+        self.age = age_in
+        self.hunger_score = hunger_in
         return None
     
     def one_day(self):
