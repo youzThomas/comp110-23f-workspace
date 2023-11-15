@@ -63,7 +63,7 @@ class River:
         num_fish: int = len(self.fish)
         num_bear: int = len(self.bears)
         num_day: int = self.day
-        print("~~~ Day " + num_day + ": ~~~\nFish population: " + num_fish + "\nBear population: " + num_bear)
+        print(f"~~~ Day {num_day}: ~~~\nFish population: {num_fish}\nBear population: {num_bear}")
         return None
             
     def one_river_day(self):
