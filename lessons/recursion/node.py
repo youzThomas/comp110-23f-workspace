@@ -1,4 +1,7 @@
+"""Node Class."""
+
 from __future__ import annotations
+
 
 class Node:
     """My Node class for linked lists."""
