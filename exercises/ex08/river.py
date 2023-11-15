@@ -1,4 +1,5 @@
-"""File to define River class"""
+"""EX08 - River Simulation."""
+__author__ = "730679279"
 
 from exercises.ex08.fish import Fish
 from exercises.ex08.bear import Bear

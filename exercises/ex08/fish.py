@@ -1,5 +1,5 @@
 """File to define Fish class"""
-
+from __future__ import annotations
 class Fish:
     age: int
     
