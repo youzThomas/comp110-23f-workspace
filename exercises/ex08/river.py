@@ -39,7 +39,7 @@ class River:
     def bears_eating(self):
         """Modifying the attributes after bears eat."""
         for bear in self.bears:
-            if len(self.bears) >= 5:
+            if len(self.fish) >= 5:
                 self.remove_fish(3)
                 bear.eat(3)
         return None
@@ -110,6 +110,6 @@ class River:
         for x in range(0, amount):
             self.fish.pop(0)
 
-            
+
         
         
