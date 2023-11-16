@@ -107,9 +107,9 @@ class River:
 
     def remove_fish(self, amount: int):
         """Remove a certain amount of fish from the river ecosystem."""
-        index: int = 0
-        while index < amount:
+        for x in range(0, amount):
             self.fish.pop(0)
-            index = index + 1
+
+            
         
         
