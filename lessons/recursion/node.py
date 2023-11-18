@@ -3,6 +3,7 @@
 from __future__ import annotations
 __author__ = "730679279"
 
+
 class Node:
     """My Node class for linked lists."""
     
