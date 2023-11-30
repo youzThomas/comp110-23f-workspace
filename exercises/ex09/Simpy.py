@@ -8,6 +8,7 @@ __author__ = "730679279"
 
 
 class Simpy:
+    """Simpy class."""
     values: list[float]
 
     def __init__(self, input_value: list[float]) -> None:
@@ -19,6 +20,7 @@ class Simpy:
         return "Simpy({})".format(self.values)
     
     def fill(self, fill_value: float, num_values: int) -> None:
+        """Fill the 'value' attribute with the given number of specific value."""
         self.values = [fill_value] * num_values
 
     def arange(self, start: float, stop: float, step: float = 1.0) -> None:
@@ -70,12 +72,8 @@ class Simpy:
             result: list[bool] = [x > rhs for x in self.values]
         elif isinstance(rhs, Simpy):
             assert len(self.values) == len(rhs.values)
-            result = [self.values[x] > rhs.values[x] for x  in range(len(self.values))]
+            result = [self.values[x] > rhs.values[x] for x in range(len(self.values))]
         return result
-    
-    def __getitem__(self, rhs: int) -> float:
-        """Overloading subscription notation."""
-        return self.values[rhs]
     
     def __getitem__(self, rhs: Union[int, list[bool]]) -> Union[float, Simpy]:
         """Overloading subscription notation."""
