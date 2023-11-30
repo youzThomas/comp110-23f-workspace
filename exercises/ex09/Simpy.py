@@ -19,14 +19,14 @@ class Simpy:
         result: str = "Simple" + " ( " + str(self.values) + " ) "
         return result
     
-    def fill(self, fill_value: float, fill_count: int):
+    def fill(self, fill_value: float, fill_count: int) -> None:
         """Fill the 'values' attribute with the given number."""
         i: int = 0
         while i < fill_count:
             self.values.append(fill_value)
             i += 1
 
-    def arange(self, start: float, stop: float, step: float = 1.0):
+    def arange(self, start: float, stop: float, step: float = 1.0) -> None:
         """Fill the 'value' attribute with the given range of numbers."""
         assert step != 0.0
         while abs(start) < abs(stop):
