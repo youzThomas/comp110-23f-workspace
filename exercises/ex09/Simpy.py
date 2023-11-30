@@ -16,10 +16,6 @@ class Simpy:
     
     def __str__(self) -> str:
         """Overloading print."""
-        result: str = "Simply" + " ( " + str(self.values) + " ) "
-        return result
-    
-    def __repr__(self):
         return "Simpy({})".format(self.values)
     
     def fill(self, fill_value: float, fill_count: int) -> None:
