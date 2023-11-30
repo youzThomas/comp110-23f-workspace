@@ -16,7 +16,7 @@ class Simpy:
     
     def __str__(self) -> str:
         """Overloading print."""
-        result: str = "Simple" + " ( " + str(self.values) + " ) "
+        result: str = "Simply" + " ( " + str(self.values) + " ) "
         return result
     
     def __repr__(self):
