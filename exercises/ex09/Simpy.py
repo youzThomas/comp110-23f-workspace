@@ -18,12 +18,8 @@ class Simpy:
         """Overloading print."""
         return "Simpy({})".format(self.values)
     
-    def fill(self, fill_value: float, fill_count: int) -> None:
-        """Fill the 'values' attribute with the given number."""
-        i: int = 0
-        while i < fill_count:
-            self.values.append(fill_value)
-            i += 1
+    def fill(self, fill_value: float, num_values: int) -> None:
+        self.values = [fill_value] * num_values
 
     def arange(self, start: float, stop: float, step: float = 1.0) -> None:
         """Fill the 'value' attribute with the given range of numbers."""
