@@ -19,6 +19,9 @@ class Simpy:
         result: str = "Simple" + " ( " + str(self.values) + " ) "
         return result
     
+    def __repr__(self):
+        return "Simpy({})".format(self.values)
+    
     def fill(self, fill_value: float, fill_count: int) -> None:
         """Fill the 'values' attribute with the given number."""
         i: int = 0
